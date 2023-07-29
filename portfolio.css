@@ -1,0 +1,398 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-family: 'Bahnschrift';
+  }
+  .texte{
+    text-align: center;
+    font-weight: bold;
+  }
+ /* Add margin to the right of the image */
+.smaller-image {
+  margin-right: 20px; /* Adjust the value to set the desired space */
+}
+
+/* Adjust the width and height of the image */
+.smaller-image {
+  width: 300px; /* Adjust the width to the desired size */
+  height: 250px; /* Adjust the height to the desired size */
+}
+
+  
+  /* Body styles */
+  body {
+    font-family:'Bahnschrift';
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    background-image: url(./images/portfoliooo.jpg);
+    background-size:contain;
+    
+  }
+
+  .padding{
+    padding: 1rem;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 2rem;
+    padding:2rem;
+  }
+  
+  /* Header styles */
+  .header {
+    background: linear-gradient(-45deg, rgba(237, 158, 133, 0.8), rgba(239, 132, 173, 0.8), rgba(141, 208, 232, 0.8), rgba(116, 239, 210, 0.8));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+  .header:hover {
+    background-color: #8A79CE;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header nav ul {
+    list-style: none;
+  }
+  
+  .header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  .header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Transparent color effect for list items on hover */
+  .header nav ul li:hover {
+    background-color: rgba(110, 101, 101, 0.3); /* Change the alpha value (0.3) to adjust transparency */
+    transition: width -0.6s ease;
+
+  }
+  
+  /* Section styles */
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Project styles */
+  .project {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project p {
+    margin-bottom: 1rem;
+  }
+  
+  .project a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .project a:hover {
+    background-color: #555;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background: linear-gradient(-45deg, rgba(237, 158, 133, 0.8), rgba(239, 132, 173, 0.8), rgba(141, 208, 232, 0.8), rgba(116, 239, 210, 0.8));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .mr-3{
+    padding:2rem;
+   
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  /* Your existing CSS styles go here */
+
+
+
+.transition-text {
+  font-size: 18px;
+  opacity: 0; /* Start with the text hidden */
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* CSS for the contact form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form input,
+form textarea {
+  flex: 1 1 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+button {
+  background-color: #6A5ACD;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 2px solid #6A5ACD;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #8A79CE;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+
+form textarea {
+  resize: vertical;
+}
+
+/* Your existing styles */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: #6A5ACD;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.social-icons a:hover {
+  color: #8A79CE;
+}
+.p{
+  font-family: 'joan';
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.po{
+  font-family: 'joan';
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+/* Add styles for the square div */
+.square-div {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; /* Use rgba to set transparency (adjust the alpha value to change transparency) */
+  border-radius: 10px; /* Set the border radius for the square div */
+  padding: 1rem; /* Add some padding to the square div */
+  transition: all 0.3s ease; /* Add a transition effect on hover */
+}
+
+/* Add styles for the paragraph inside the square div */
+.square-div p {
+  color: #fff; /* Set the text color inside the square div */
+}
+
+/* Add hover effect for the square div */
+.square-div:hover {
+  background-color: rgba(106, 90, 205, 0.8); /* Change the background color on hover */
+}
+
+/* Add hover effect for the paragraph inside the square div */
+.square-div:hover p {
+  color: #000; /* Change the text color on hover */
+}
+
+.ul{
+  margin: 2rem;
+  padding-bottom:0.5rem;
+}
+
+.ull{
+  margin: 1rem;
+  
+}
+.ull2{
+  justify-content: right;
+  margin-bottom: 2rem;
+}
+.ul2{
+  margin-bottom: 1rem;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 2rem;
+  width: 700px; /* Adjust the width as desired */
+  height: 600px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
+.skill-bar  {
+  width: 300px; /* Adjust the width to your desired length */
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid black;
+  justify-content: center;
+  
+}
+
+.skill-percentage {
+  position: absolute;
+  color: #fff; /* Set the color of the percentage text */
+}
+
+
+.skill-bar1 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+  border-radius: 5px;
+}
+
+.skill-bar2 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+
+.skill-bar3 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+.skill-bar4 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+.skill-bar5 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+.skill-bar6 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+.skill-bar7 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+.skill-bar8 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+
+.skill-bar9 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 5px;
+}
+
+/* Add styles for other skill bars as needed */
+
+
+/* Add styles for different skill bars based on percentages */
+/* Example: */
+.skill-bar-html {
+  background-color: #6cbf5c; /* Green color for 100% */
+  width: 100%;
+  border-radius: 5px;
+}
+.skill-bar-css {
+  background-color: #f5c06c; /* Yellow color for 85% */
+  width: 85%;
+  border-radius: 5px;
+}
+/* Add styles for other skill bars as needed */
+
+
+/* Add more styles for other percentages as needed */
