@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     try {
-      const response = await fetch('/submit', { // Updated URL to /submit
+      const response = await fetch('https://formspree.io/Andrewenahoro2019@gmail.com', { // Updated URL to /submit
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
