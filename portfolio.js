@@ -7,37 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     });
   });
-
-  // Form submission handling for the "Contact Me" form
-  const contactForm = document.getElementById('contactForm');
-
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(contactForm);
-    const formDataJson = {};
-    formData.forEach((value, key) => {
-      formDataJson[key] = value;
-    });
-
-    try {
-      const response = await fetch('https://formspree.io/Andrewenahoro2019@gmail.com', { // Updated URL to /submit
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formDataJson)
-      });
-
-      if (response.ok) {
-        alert('Message sent successfully!');
-        contactForm.reset();
-      } else {
-        alert('Failed to send message. Please try again later.');
-      }
-    } catch (err) {
-      console.error('Error:', err);
-      alert('An error occurred. Please try again later.');
-    }
-  });
 });
