@@ -27,19 +27,18 @@
 
   
     <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Me</h2>
-       <form name="contact" method="POST" netlify>
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Submit</button>
-</form>
+   <section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form name="contact" method="POST" data-netlify="true" action="/success">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
 
-        
-      </div>
-    </section>
 
  
     <script src="portfolio.js"></script>
