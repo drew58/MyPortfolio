@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Portfolio</title>
+  <!-- Add your CSS styling for the animation here -->
+  <style>
+    /* Example CSS animation */
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    body{
+     background: linear-gradient(-45deg, rgba(237, 158, 133, 0.8), rgba(239, 132, 173, 0.8), rgba(141, 208, 232, 0.8), rgba(116, 239, 210, 0.8));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;;
+    }
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+    /* Add more styles for your animation and loading progress here */
+  </style>
+</head>
+<body>
+  <!-- Your animation of "ANDREW" goes here -->
+  <div class="animation">
+    <h1 style="text-align: center; font-size: 150px;">WELCOME TO MY <br> PORTFOLIO</h1>
+  </div>
+
+  <!-- Your loading progress goes here -->
+  <div class="loading" style="text-align: center;">
+    Loading...
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <script>
+    // Simulate a loading progress from 0% to 100%
+    let progress = 0;
+    const progressBar = document.getElementById('progressBar');
+    const interval = setInterval(() => {
+      progress++;
+      progressBar.style.width = `${progress}%`;
+      if (progress === 100) {
+        clearInterval(interval);
+        // After the loading is complete, redirect to your portfolio page
+        setTimeout(() => {
+          window.location.href = 'https://sweet-conkies-790163.netlify.app';
+        }, 500); // Add a slight delay before redirecting
+      }
+    }, 50); // Adjust the interval as needed
+  </script>
+</body>
+</html>
